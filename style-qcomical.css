@@ -54,7 +54,7 @@ a:hover { text-decoration: underline; }
 .course[open] { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
 
 .course summary {
-  display: flex; justify-content: space-between; align-items: center;
+  display: flex; justify-content: flex-start; align-items: center;
   flex-wrap: wrap; gap: 6px; padding: 10px 12px; cursor: pointer; list-style: none;
 }
 .course summary::-webkit-details-marker { display: none; }
