@@ -54,17 +54,23 @@ a:hover { text-decoration: underline; }
 .course[open] { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
 
 .course summary {
-  display: flex; justify-content: flex-start; align-items: center;
+  display: flex; justify-content: flex-start; align-items: flex-start;
   flex-wrap: wrap; gap: 6px; padding: 10px 12px; cursor: pointer; list-style: none;
 }
 .course summary::-webkit-details-marker { display: none; }
-.course summary::before { content: "▸"; margin-right: 6px; }
+.course summary::before {
+  content: "▸"; flex-shrink: 0; margin-right: 6px; line-height: 1.4;
+}
 .course[open] summary::before { content: "▾"; }
 
-.course summary .left { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+.course summary .left {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px;
+  flex: 1; min-width: 0;
+}
 .course summary .right { margin-left: auto; white-space: nowrap; }
 
 .course .abstract { padding: 10px 12px 12px 34px; border-top: 1px solid #eee; color: #333; line-height: 1.45; text-align: justify; }
+
 
 /* Course Colors */
 .course.kc { background-color: #b3c7f9; }
