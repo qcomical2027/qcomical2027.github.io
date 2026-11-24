@@ -71,6 +71,8 @@ a:hover { text-decoration: underline; }
 
 .course .abstract { padding: 10px 12px 12px 34px; border-top: 1px solid #eee; color: #333; line-height: 1.45; text-align: justify; }
 
+.course-title { font-weight: bold; }
+
 
 /* Course Colors */
 .course.kc { background-color: #b3c7f9; }
